@@ -1,0 +1,39 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Colors" />
+
+<ColorPalette>
+  <ColorItem 
+    title="System/grayscale" 
+    subtitle="Оттенки серого" 
+    colors={{
+      '#fff': '#fff',
+      'color-system-gray--20': '#f9f7f7',
+      'color-system-gray--40': '#f0efef',
+      'color-system-gray--60': '#dbe0dc',
+      'color-system-gray--80': '#aab1ad',
+      'color-system-gray': '#6d7671',
+      'color-system-black': '#2f2525',
+    }} 
+  />
+  <ColorItem 
+    title="System/green" 
+    subtitle="Зелёный" 
+    colors={{ 'color-system-medium-green': '#c1e3cd', 'color-system-dark-green': '#288647' }} 
+  />
+  <ColorItem 
+    title="System/red" 
+    subtitle="Красный" 
+    colors={{ 'color-system-red': 'red' }} 
+  />
+  <ColorItem 
+    title="System/Blue" 
+    subtitle="Синий" 
+    colors={{ 'color-system-blue': '#0772d5' }} 
+  />
+  <ColorItem 
+    title="System/bg" 
+    subtitle="Фон" 
+    colors={{ 'color-system-bg': '#fffdf6' }} 
+  />
+</ColorPalette>

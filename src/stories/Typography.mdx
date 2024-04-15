@@ -1,0 +1,65 @@
+import { Meta, Typeset } from '@storybook/blocks';
+
+<Meta title="Typography" />
+
+export const typography = {
+  type: {
+    primary: 'Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
+  },
+  weight: {
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    black: 900,
+  },
+  size: {
+    h6: 12,
+    h5: 14,
+    h4: 16,
+    h3: 18,
+    h2: 20,
+    h1: 25,
+    h6d: 20,
+    h5d: 25,
+    h4d: 30,
+    h3d: 35,
+    h2d: 45,
+    h1d: 50,
+  },
+};
+
+export const SampleText = 'В «Окошках» нет лишних функций, всё по делу. Меньше значит проще и понятнее. Меньше значит больше времени на любимое дело и клиентов.';
+
+**Weights:** 400(regular), 500(medium), 700(bold), 900(black)
+
+**Mobile:** h6-h1
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h6),
+    Number(typography.size.h5),
+    Number(typography.size.h4),
+    Number(typography.size.h3),
+    Number(typography.size.h2),
+    Number(typography.size.h1),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
+
+**Desktop:** h6-h1
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.h6d),
+    Number(typography.size.h5d),
+    Number(typography.size.h4d),
+    Number(typography.size.h3d),
+    Number(typography.size.h2d),
+    Number(typography.size.h1d),
+  ]}
+  fontWeight={typography.weight.regular}
+  sampleText={SampleText}
+  fontFamily={typography.type.primary}
+/>
