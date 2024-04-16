@@ -31,7 +31,7 @@ const meta = {
     value: { control: 'text' },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onChange: fn(), onBlur: fn(), onFocus: fn(), onInput: fn(), label: 'Категория', sublabel: 'This is a tooltip', error: 'Текст ошибки', placeholder: 'Константин', type: 'text', name: 'name' },
+  args: { onChange: fn(), onBlur: fn(), onFocus: fn(), onInput: fn(), label: 'Категория', sublabel: 'This is a tooltip', error: '', placeholder: 'Константин', type: 'text', name: 'name' },
 } satisfies Meta<typeof Input>;
 
 export default meta;

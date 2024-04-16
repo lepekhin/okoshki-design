@@ -27,7 +27,7 @@ const meta = {
     selected: { control: 'text' },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onChange: fn(), onFocus: fn(), label: 'Выберите услугу', sublabel: 'This is a tooltip', error: 'Текст ошибки', name: 'service', list: { 'manicure': 'Маникюр' }, emptyOption: 'Любая', selected: 'manicure' },
+  args: { onChange: fn(), onFocus: fn(), label: 'Выберите услугу', sublabel: 'This is a tooltip', error: '', name: 'service', list: { 'manicure': 'Маникюр' }, emptyOption: 'Любая', selected: 'manicure' },
 } satisfies Meta<typeof Select>;
 
 export default meta;
